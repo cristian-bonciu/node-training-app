@@ -30,7 +30,7 @@ wheaterForm.addEventListener('submit', (e) => {
     messageTwo.textContent = 'Loading weather ...'
     messageOne.textContent = ''
 
-    const url = 'http://localhost:3000/weather?address=' + location
+    const url = '/weather?address=' + location
 
     fetch(url).then((response) => {
         response.json().then((data) => {
